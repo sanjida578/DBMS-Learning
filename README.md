@@ -497,20 +497,44 @@ SELECT * FROM students;
 - ENUM data type এবং VARCHAR ব্যবহার  
 
 ---
-📘 Class 4 — INSERT, SELECT, ALTER TABLE
-🧩 Topic: INSERT, SELECT, ALTER TABLE
-🔹 সব কলাম SELECT করা
+
+---
+
+
+# 📘 **Class 4 — INSERT, SELECT, ALTER TABLE**
+
+## 🧩 **Topic:** `INSERT`, `SELECT`, `ALTER TABLE`
+
+---
+
+## 🔹 **সব কলাম SELECT করা**
+```sql
 SELECT * FROM TableName;
-📖 Example:
+````
 
+📖 **Example:**
+
+```sql
 SELECT * FROM students;
-🔹 নির্দিষ্ট কলাম SELECT করা
+```
+
+---
+
+## 🔹 **নির্দিষ্ট কলাম SELECT করা**
+
+```sql
 SELECT column1, column2, ... FROM TableName;
-📖 Example:
+```
 
+📖 **Example:**
+
+```sql
 SELECT Name, Roll FROM students;
-💻 Terminal View:
+```
 
+💻 **Terminal View:**
+
+```
 MariaDB [cstustudent]> SELECT Name, Roll FROM students;
 +---------+--------+
 |  Name   |  Roll  |
@@ -518,13 +542,25 @@ MariaDB [cstustudent]> SELECT Name, Roll FROM students;
 | Brisrty |  100   |
 +---------+--------+
 1 row in set (0.012 sec)
-🔄 টেবিলের নাম পরিবর্তন করা
+```
+
+---
+
+## 🔄 **টেবিলের নাম পরিবর্তন করা**
+
+```sql
 RENAME TABLE OldName TO NewName;
-📖 Example:
+```
 
+📖 **Example:**
+
+```sql
 RENAME TABLE students TO student_data;
-💻 Terminal View:
+```
 
+💻 **Terminal View:**
+
+```
 MariaDB [cstustudent]> RENAME TABLE students TO student_data;
 Query OK, 0 rows affected (0.015 sec)
 
@@ -535,21 +571,55 @@ MariaDB [cstustudent]> SHOW TABLES;
 | student_data         |
 +----------------------+
 1 row in set (0.002 sec)
-✏️ ALTER TABLE — কলাম পরিবর্তন, যোগ বা বাদ দেওয়া
-➕ নতুন কলাম যোগ করা
+```
+
+---
+
+## ✏️ **ALTER TABLE — কলাম পরিবর্তন, যোগ বা বাদ দেওয়া**
+
+### ➕ **নতুন কলাম যোগ করা**
+
+```sql
 ALTER TABLE student_data ADD COLUMN Address VARCHAR(100);
-🧩 কলামের নাম পরিবর্তন করা
+```
+
+### 🧩 **কলামের নাম পরিবর্তন করা**
+
+```sql
 ALTER TABLE student_data CHANGE COLUMN Roll StudentRoll VARCHAR(10);
-❌ কলাম মুছে ফেলা
+```
+
+### ❌ **কলাম মুছে ফেলা**
+
+```sql
 ALTER TABLE student_data DROP COLUMN Address;
-✅ Summary
+```
+
+---
+
+## ✅ **Summary**
+
 এই ক্লাসে তুমি শিখেছো —
 
-🧠 SELECT দিয়ে ডাটা দেখা
-🎯 নির্দিষ্ট কলাম বাছাই করা
-🔄 টেবিল RENAME করা
-🛠️ ALTER TABLE দিয়ে column add, rename বা delete করা
-💡 Tip
-⚙️ Practice করার সময় সব কমান্ড ; দিয়ে শেষ করবে।
+* 🧠 `SELECT` দিয়ে ডাটা দেখা
+* 🎯 নির্দিষ্ট কলাম বাছাই করা
+* 🔄 টেবিল `RENAME` করা
+* 🛠️ `ALTER TABLE` দিয়ে column **add**, **rename** বা **delete** করা
 
-🚫 ভুল বানান যেমন FROLM বা databese দিলে syntax error আসবে।
+---
+
+## 💡 **Tip**
+
+⚙️ Practice করার সময় সব কমান্ড **`;`** দিয়ে শেষ করবে।
+
+🚫 ভুল বানান যেমন `FROLM` বা `databese` দিলে **syntax error** আসবে।
+
+---
+
+✍️ *Prepared by: [Your Name]*
+📅 *Course: Database Management System — Class 4*
+🌐 *Powered by MariaDB & SQL Basics*
+
+```
+
+
