@@ -1,5 +1,5 @@
-```# 📘 Class 4 — SQL Commands: INSERT, SELECT, ALTER TABLE
-
+```
+📘 Class 4 — SQL Commands: INSERT, SELECT, ALTER TABLE
 
 ## 🔹 SELECT — ডাটা দেখার জন্য
 
