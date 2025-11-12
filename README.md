@@ -616,10 +616,4 @@ ALTER TABLE student_data DROP COLUMN Address;
 
 ---
 
-✍️ *Prepared by: [Your Name]*
-📅 *Course: Database Management System — Class 4*
-🌐 *Powered by MariaDB & SQL Basics*
-
-```
-
 
